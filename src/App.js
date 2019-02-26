@@ -35,12 +35,12 @@ class App extends Component {
   }  
 
   beerSelectHandler = (id) => {
-    this.setState({beerSelectedId: id});
     axios.get('https://6l36bf3ud0.execute-api.us-east-1.amazonaws.com/dev/beer/'+id, { crossdomain: true })
       .then(response => {
         //const beerReponsePayLoad = JSON.parse(JSON.stringify(response.data));
         const beerReponsePayLoad = response.data;
-        this.setState({selectedBrew: beerReponsePayLoad});
+        this.setState({selectedBrew: beerReponsePayLoad, beerSelectedId:id});
+
     });
   }
 
