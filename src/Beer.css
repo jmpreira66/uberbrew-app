@@ -32,6 +32,8 @@
     word-wrap: break-word;
     width: 210px;
     height:42px;
+    color: orangered;
+    font: bold;
 }
 
 .DisplayBeers {
