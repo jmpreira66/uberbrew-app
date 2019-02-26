@@ -1,0 +1,46 @@
+.Beer {
+    width: 225px;    
+    border: 1px solid gray;
+    padding: 1px;        
+    width: 223px;
+    display: inline-block;    
+    height: 268px;
+    margin-right: 2px;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    border-top-width: 1px;
+    margin-top: 10px;
+}
+
+.BeerLabel {
+    width: 200px;
+    height: 170px;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.BeerLabelContainer {
+    width: 240px;
+    height: 270px;
+    text-align: center;
+}
+
+.BeerDescription {
+    margin-bottom: 4px;
+    margin-top: 6px;
+    word-wrap: break-word;
+    width: 210px;
+    height:42px;
+}
+
+.DisplayBeers {
+    text-align: center;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.UberBrew {
+    text-align: center;  
+}
