@@ -56,7 +56,7 @@ class App extends Component {
                 bid = {beer.bid}
                 name = {beer.beer_name}
                 label = {beer.beer_label}
-                description = {selectedBrewDescription || null}
+                description = {selectedBrewDescription}
                 selected = {this.beerSelectHandler}
                 beerSelected = {this.state.beerSelectedId}/>                
             );                      
