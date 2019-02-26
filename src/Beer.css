@@ -14,15 +14,15 @@
 }
 
 .BeerLabel {
-    width: 200px;
-    height: 170px;
+    width: 175px;
+    height: 176px;
     text-align: center;
     border: 1px solid blue;
 }
 
 .BeerLabelContainer {
-    width: 240px;
-    height: 270px;
+    width: 223px;
+    height: 250px;
     text-align: center;
 }
 
