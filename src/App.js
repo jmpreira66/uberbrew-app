@@ -16,15 +16,17 @@ class App extends Component {
           return {index:i, value:beer.beer_name};
         });
 
-        mappedResponsePayload.sort((a, b) => {
-          if(a.value > b.value) {
-            return 1;
-          }
-          if(a.value < b.value) {
-            return -1;
-          }
-          return 0;
-        });
+        // mappedResponsePayload.sort((a, b) => {
+        //   if(a.value > b.value) {
+        //     return 1;
+        //   }
+        //   if(a.value < b.value) {
+        //     return -1;
+        //   }
+        //   return 0;
+        // });
+
+        mappedResponsePayload.sort((a,b) => (a.value > b.value ? 1 : -1));
 
         const sortedResponsePayload = mappedResponsePayload.map((beer) => {
           return response.data[beer.index];
@@ -40,7 +42,6 @@ class App extends Component {
         //const beerReponsePayLoad = JSON.parse(JSON.stringify(response.data));
         const beerReponsePayLoad = response.data;
         this.setState({selectedBrew: beerReponsePayLoad, beerSelectedId:id});
-
     });
   }
 
